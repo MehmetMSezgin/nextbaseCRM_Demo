@@ -22,7 +22,7 @@ public class PollStepDefs {
 
     PollPage pollPage = new PollPage();
 
-    @Given("User is logged in as {string}")
+   /* @Given("User is logged in as {string}")
     public void user_Is_Logged_In_As(String userType) {
         String url = ConfigurationReader.get("url");
         Driver.get().get(url);
@@ -42,7 +42,7 @@ public class PollStepDefs {
         }
         //send username and password and login
         new LoginPage().login(username, password);
-    }
+    }*/
     @When("User navigates to Poll page")
     public void user_Navigates_To_PollPage() {
         pollPage.pollButton.click();
